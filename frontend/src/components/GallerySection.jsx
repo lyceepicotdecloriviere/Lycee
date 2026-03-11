@@ -8,34 +8,34 @@ const galleryImages = [
     span: "col-span-2 row-span-2"
   },
   {
+    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/f3uprshz_E8784F01-634D-4C94-B319-B29BBD33AACB.jpeg",
+    alt: "Vue aérienne de l'établissement",
+    span: "col-span-2 row-span-1"
+  },
+  {
+    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/07vhvhgv_9CFA2D58-EB27-4D52-84C3-D9F2D98746F3.jpeg",
+    alt: "Cour intérieure et bâtiments",
+    span: "col-span-1 row-span-1"
+  },
+  {
+    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/obabvjp1_0F21E928-7541-474B-8769-739046B0325F.jpeg",
+    alt: "Bâtiment principal avec escaliers",
+    span: "col-span-1 row-span-1"
+  },
+  {
+    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/q5grkiw1_251C4209-A8DA-46C1-A8AD-B969D98ABCD4.jpeg",
+    alt: "Terrain de sport et bâtiments",
+    span: "col-span-1 row-span-1"
+  },
+  {
+    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/srgwx0tx_AA4C3239-15DC-4CE6-B54A-F825F35D9D5E.jpeg",
+    alt: "Élèves dans la cour sous les arbres",
+    span: "col-span-1 row-span-1"
+  },
+  {
     url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/84qrgk4s_CD612B02-9FAD-46C8-A35D-D3C5A71FC78C.jpeg",
     alt: "Élèves en classe souriants",
     span: "col-span-2 row-span-1"
-  },
-  {
-    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/f2ieobfk_A06DD6E0-BF2F-4D28-AF71-CEDE7F5E1B38.png",
-    alt: "Enfants assis dans l'herbe",
-    span: "col-span-1 row-span-1"
-  },
-  {
-    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/p6qq4ymc_65D29656-C819-499B-B336-599DB2F78A43.png",
-    alt: "Enfants du quartier Antsongo",
-    span: "col-span-1 row-span-1"
-  },
-  {
-    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/cz2z3ry6_94FD9E54-6F4A-4600-B13B-3B89FF204DE4.png",
-    alt: "Équipe et personnel de l'établissement",
-    span: "col-span-2 row-span-1"
-  },
-  {
-    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/kafnjqss_A575359E-FCAA-4128-A738-AB1BB31AB030.jpeg",
-    alt: "Bâtiment de l'établissement",
-    span: "col-span-1 row-span-1"
-  },
-  {
-    url: "https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/6g5obf3j_CF0A4C4C-E732-444B-BAB9-F8DA67EF3277.jpeg",
-    alt: "Façade de l'école",
-    span: "col-span-1 row-span-1"
   },
 ];
 
