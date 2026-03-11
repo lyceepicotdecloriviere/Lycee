@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Copy, Heart, Building2, Smartphone, CheckCircle, Users, GraduationCap, Bed, ExternalLink } from 'lucide-react';
+import { Copy, Heart, Building2, Smartphone, CheckCircle, Users, GraduationCap, Bed, ExternalLink, Utensils, Scissors, Home, TreePine, Wrench } from 'lucide-react';
 import { Button } from './ui/button';
 import { toast } from 'sonner';
 
@@ -49,6 +49,14 @@ export const DonateSection = () => {
 
   const bookingUrl = "https://www.booking.com/Share-APAkqfd";
 
+  const freeDonatioNeeds = [
+    { icon: Utensils, label: "Cuisine", description: "Équipements et fournitures" },
+    { icon: Scissors, label: "Atelier couture", description: "Machines et matériel" },
+    { icon: Home, label: "Établissement", description: "Rénovations intérieures" },
+    { icon: TreePine, label: "Terrain", description: "Aménagement extérieur" },
+    { icon: Wrench, label: "Bâtiments", description: "Entretien et construction" },
+  ];
+
   return (
     <section
       id="donate"
@@ -78,7 +86,7 @@ export const DonateSection = () => {
           </p>
         </motion.div>
 
-        {/* Booking.com Card - NEW */}
+        {/* Booking.com Card */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -114,6 +122,69 @@ export const DonateSection = () => {
               </div>
             </div>
           </a>
+        </motion.div>
+
+        {/* Free Donation Section - NEW */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-8"
+        >
+          <div className="bg-gradient-to-br from-secondary-600 to-secondary-700 rounded-3xl p-8 md:p-10 shadow-xl max-w-4xl mx-auto text-white">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-2 bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-4">
+                <Heart className="w-4 h-4" />
+                <span>Don libre</span>
+              </div>
+              <h3 className="font-heading font-bold text-xl md:text-2xl mb-2">
+                Aidez à améliorer l'établissement
+              </h3>
+              <p className="text-white/80 text-sm md:text-base">
+                Vos dons libres servent à financer les améliorations suivantes
+              </p>
+            </div>
+            
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+              {freeDonatioNeeds.map((item, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.3, delay: index * 0.1 }}
+                  className="bg-white/10 backdrop-blur-sm rounded-2xl p-4 text-center hover:bg-white/20 transition-colors"
+                >
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                    <item.icon className="w-6 h-6 text-white" />
+                  </div>
+                  <p className="font-bold text-sm mb-1">{item.label}</p>
+                  <p className="text-white/70 text-xs">{item.description}</p>
+                </motion.div>
+              ))}
+            </div>
+
+            <div className="mt-8 text-center">
+              <p className="text-white/80 text-sm mb-4">
+                Contactez-nous pour faire un don libre du montant de votre choix
+              </p>
+              <Button
+                asChild
+                data-testid="free-donation-whatsapp"
+                className="bg-white text-secondary-700 hover:bg-white/90 rounded-full px-8 shadow-lg hover:-translate-y-1 active:scale-95 transition-all"
+              >
+                <a
+                  href="https://wa.me/261348185069?text=Bonjour,%20je%20souhaite%20faire%20un%20don%20libre%20pour%20aider%20l%27%C3%A9tablissement."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Heart className="w-4 h-4 mr-2" />
+                  Faire un don libre
+                </a>
+              </Button>
+            </div>
+          </div>
         </motion.div>
 
         {/* Sponsorship Section */}

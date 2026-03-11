@@ -118,9 +118,9 @@ export const ContactSection = () => {
         >
           <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-8 md:p-10 text-center text-white shadow-2xl shadow-primary-600/30">
             <img 
-              src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/3abuxkj7_9F6157B7-9741-4167-9E1D-BE91E00D2894.png"
-              alt="Logo Lycée Picot de Clorivière"
-              className="w-24 h-24 mx-auto mb-6 object-contain"
+              src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/fm3wi2g4_411CB88D-1E4B-4860-B074-51CB29695E6F.jpeg"
+              alt="Sœur Viviane - Directrice"
+              className="w-28 h-28 mx-auto mb-6 object-cover rounded-full border-4 border-white/30 shadow-lg"
             />
             <h3 className="font-heading font-bold text-2xl mb-2">
               Sœur Viviane
