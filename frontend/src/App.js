@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
 import { GallerySection } from "./components/GallerySection";
+import { MealsSection } from "./components/MealsSection";
 import { ClothesSection } from "./components/ClothesSection";
 import { DonateSection } from "./components/DonateSection";
 import { ContactSection } from "./components/ContactSection";
@@ -20,6 +21,7 @@ const HomePage = () => {
         <HeroSection />
         <AboutSection />
         <GallerySection />
+        <MealsSection />
         <ClothesSection />
         <DonateSection />
         <ContactSection />
