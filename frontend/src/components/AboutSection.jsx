@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { BookOpen, GraduationCap, Heart, Users } from 'lucide-react';
+import { BookOpen, GraduationCap, Heart, Users, Briefcase } from 'lucide-react';
 
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
@@ -14,9 +14,9 @@ export const AboutSection = () => {
 
   const stats = [
     { icon: Users, value: '1295', label: t('stats.students') },
+    { icon: Briefcase, value: '70', label: t('stats.staff') },
     { icon: GraduationCap, value: '4', label: t('stats.levels') },
     { icon: Heart, value: '14', label: t('stats.years') },
-    { icon: BookOpen, value: '∞', label: t('stats.dreams') },
   ];
 
   return (
@@ -55,11 +55,11 @@ export const AboutSection = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="absolute -top-4 -left-4 w-full h-full bg-secondary-200 rounded-3xl transform -rotate-3" />
-            <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary-200 rounded-3xl transform rotate-3" />
+            <div className="absolute -top-4 -left-4 w-full h-full bg-primary-200 rounded-3xl transform -rotate-3" />
+            <div className="absolute -bottom-4 -right-4 w-full h-full bg-primary-300 rounded-3xl transform rotate-3" />
             <img
-              src="https://images.unsplash.com/photo-1742925074272-c7cd871beeca?crop=entropy&cs=srgb&fm=jpg&q=85&w=800"
-              alt="Sister Viviane with students"
+              src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/xftcgprx_D62FC3D0-D33F-4586-AAD3-A40C9E1CDA04.jpeg"
+              alt="Élèves du Lycée Picot de Clorivière"
               data-testid="about-image"
               className="relative w-full h-[400px] md:h-[500px] object-cover rounded-3xl shadow-2xl"
             />

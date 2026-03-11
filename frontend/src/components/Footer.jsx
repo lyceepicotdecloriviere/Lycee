@@ -16,9 +16,9 @@ export const Footer = () => {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ysol8o1t_7E016C46-48AE-40B5-97C9-ADABF846205A.jpeg"
+                src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ckpefjpv_A3AEC45F-FC77-4C65-8EAC-C6D1FB57ADAC.png"
                 alt="Logo Lycée Picot de Clorivière"
-                className="w-10 h-10 rounded-full object-cover"
+                className="w-10 h-10 object-contain"
               />
               <span className="font-heading font-bold text-xl">
                 Lycée Picot de Clorivière

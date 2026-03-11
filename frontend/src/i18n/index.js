@@ -28,9 +28,9 @@ const resources = {
       },
       stats: {
         students: "Élèves",
+        staff: "Employés",
         levels: "Niveaux",
-        years: "Années d'engagement",
-        dreams: "Rêves à réaliser"
+        years: "Années"
       },
       gallery: {
         title: "Nos Enfants",
@@ -114,9 +114,9 @@ const resources = {
       },
       stats: {
         students: "Students",
+        staff: "Staff",
         levels: "Levels",
-        years: "Years of commitment",
-        dreams: "Dreams to fulfill"
+        years: "Years"
       },
       gallery: {
         title: "Our Children",
@@ -200,9 +200,9 @@ const resources = {
       },
       stats: {
         students: "Mpianatra",
+        staff: "Mpiasa",
         levels: "Ambaratonga",
-        years: "Taona nifandraisana",
-        dreams: "Nofy hotanterahina"
+        years: "Taona"
       },
       gallery: {
         title: "Ny Ankizinay",
@@ -286,9 +286,9 @@ const resources = {
       },
       stats: {
         students: "Schüler",
+        staff: "Mitarbeiter",
         levels: "Stufen",
-        years: "Jahre Engagement",
-        dreams: "Träume zu erfüllen"
+        years: "Jahre"
       },
       gallery: {
         title: "Unsere Kinder",
@@ -372,9 +372,9 @@ const resources = {
       },
       stats: {
         students: "Estudiantes",
+        staff: "Empleados",
         levels: "Niveles",
-        years: "Años de compromiso",
-        dreams: "Sueños por cumplir"
+        years: "Años"
       },
       gallery: {
         title: "Nuestros Niños",

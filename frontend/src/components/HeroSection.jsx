@@ -15,16 +15,16 @@ export const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1518887802087-968ef5f0dc60?crop=entropy&cs=srgb&fm=jpg&q=85&w=1920"
-          alt="Children of Madagascar"
-          className="w-full h-full object-cover"
+          src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ndziy6fd_2A6A4111-336F-4981-ABC3-2B37A374AB1A.png"
+          alt="Élèves du Lycée Picot de Clorivière"
+          className="w-full h-full object-cover object-top"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-neutral-900/60 via-neutral-900/40 to-neutral-900/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-primary-900/70 via-primary-900/50 to-primary-900/80" />
       </div>
 
       {/* Decorative Elements */}
-      <div className="absolute top-20 left-10 w-32 h-32 bg-primary-500/20 rounded-full blur-3xl" />
-      <div className="absolute bottom-40 right-10 w-40 h-40 bg-secondary-500/20 rounded-full blur-3xl" />
+      <div className="absolute top-20 left-10 w-32 h-32 bg-primary-400/20 rounded-full blur-3xl" />
+      <div className="absolute bottom-40 right-10 w-40 h-40 bg-primary-300/20 rounded-full blur-3xl" />
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 text-center">

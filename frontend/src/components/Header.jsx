@@ -63,9 +63,9 @@ export const Header = () => {
             className="flex items-center gap-2 group"
           >
             <img 
-              src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ysol8o1t_7E016C46-48AE-40B5-97C9-ADABF846205A.jpeg"
+              src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ckpefjpv_A3AEC45F-FC77-4C65-8EAC-C6D1FB57ADAC.png"
               alt="Logo Lycée Picot de Clorivière"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform"
+              className="w-10 h-10 md:w-12 md:h-12 object-contain group-hover:scale-105 transition-transform"
             />
             <span className="font-heading font-bold text-sm md:text-lg text-neutral-900 hidden sm:block leading-tight">
               Lycée Picot de Clorivière

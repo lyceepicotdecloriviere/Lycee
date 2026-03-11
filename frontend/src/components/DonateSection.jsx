@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Copy, Heart, Building2, Smartphone, CheckCircle, Users, GraduationCap } from 'lucide-react';
+import { Copy, Heart, Building2, Smartphone, CheckCircle, Users, GraduationCap, Bed, ExternalLink } from 'lucide-react';
 import { Button } from './ui/button';
 import { toast } from 'sonner';
 
@@ -34,10 +34,10 @@ export const DonateSection = () => {
   };
 
   const bankDetails = {
-    accountName: "Lycée Picot de Clorivière",
+    accountName: "Association Filles du Cœur de Marie",
     bankName: "BNI Madagascar",
-    iban: "MG46 0000 5000 0123 4567 8901 234",
-    swift: "BNIMGMGX"
+    iban: "MG46 00005 00015 32625590200 90",
+    address: "lot 304 B 180, Antsongo, 110 Antsirabe"
   };
 
   const sponsorshipLevels = [
@@ -46,6 +46,8 @@ export const DonateSection = () => {
     { level: t('donate.sponsorship.secondary1'), students: '368', price: '3€' },
     { level: t('donate.sponsorship.secondary2'), students: '197', price: '5€' },
   ];
+
+  const bookingUrl = "https://www.booking.com/hotel/mg/hostels-picot-de-cloriviere.fr.html?aid=356984&label=gog235jc-10CAsokQFCG2hvc3RlbHMtcGljb3QtZGUtY2xvcml2aWVyZUgNWANokQGIAQKYATO4AQfIAQ3YAQPoAQH4AQGIAgGoAgG4AozgxM0GwAIB0gIkZjAxNjE5NDMtM2QwNC00ZTA3LThjYTktYzMzYmUxODBkZDQ52AIB4AIB";
 
   return (
     <section
@@ -76,6 +78,44 @@ export const DonateSection = () => {
           </p>
         </motion.div>
 
+        {/* Booking.com Card - NEW */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-8"
+        >
+          <a
+            href={bookingUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="booking-card"
+            className="block bg-gradient-to-r from-accent to-accent/80 rounded-3xl p-8 md:p-10 shadow-xl max-w-4xl mx-auto hover:shadow-2xl transition-all hover:-translate-y-1 group"
+          >
+            <div className="flex flex-col md:flex-row items-center gap-6">
+              <div className="w-20 h-20 bg-white/20 rounded-2xl flex items-center justify-center flex-shrink-0">
+                <Bed className="w-10 h-10 text-white" />
+              </div>
+              <div className="text-center md:text-left flex-1">
+                <div className="inline-flex items-center gap-2 bg-white/20 text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
+                  <span>Soutenez-nous en séjournant</span>
+                </div>
+                <h3 className="font-heading font-bold text-xl md:text-2xl text-white mb-2">
+                  Hostels Picot de Clorivière
+                </h3>
+                <p className="text-white/90 text-sm md:text-base mb-4">
+                  Réservez sur Booking.com - 100% des bénéfices sont reversés à l'établissement scolaire
+                </p>
+                <div className="flex items-center justify-center md:justify-start gap-2 text-white font-medium">
+                  <span>Réserver sur Booking.com</span>
+                  <ExternalLink className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </div>
+              </div>
+            </div>
+          </a>
+        </motion.div>
+
         {/* Sponsorship Section */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -86,8 +126,8 @@ export const DonateSection = () => {
         >
           <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl max-w-4xl mx-auto">
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-accent/20 rounded-2xl flex items-center justify-center">
-                <GraduationCap className="w-7 h-7 text-accent-foreground" />
+              <div className="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center">
+                <GraduationCap className="w-7 h-7 text-primary-600" />
               </div>
               <div>
                 <h3 className="font-heading font-bold text-xl md:text-2xl text-neutral-900">
@@ -129,13 +169,13 @@ export const DonateSection = () => {
             className="bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-shadow relative overflow-hidden"
           >
             {/* Recommended Badge */}
-            <div className="absolute top-4 right-4 bg-accent text-accent-foreground text-xs font-bold px-3 py-1 rounded-full">
+            <div className="absolute top-4 right-4 bg-primary-500 text-white text-xs font-bold px-3 py-1 rounded-full">
               Recommandé
             </div>
 
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-secondary-100 rounded-2xl flex items-center justify-center">
-                <Smartphone className="w-7 h-7 text-secondary-600" />
+              <div className="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center">
+                <Smartphone className="w-7 h-7 text-primary-600" />
               </div>
               <div>
                 <h3 className="font-heading font-bold text-xl md:text-2xl text-neutral-900">
@@ -151,25 +191,25 @@ export const DonateSection = () => {
               {t('donate.taptap.instructions')}
             </p>
 
-            <div className="bg-secondary-50 rounded-2xl p-6 mb-6">
+            <div className="bg-primary-50 rounded-2xl p-6 mb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-neutral-500 mb-1">Numéro de téléphone</p>
-                  <p className="font-bold text-lg text-secondary-700">+261 34 81 850 69</p>
+                  <p className="font-bold text-lg text-primary-700">+261 34 81 850 69</p>
                 </div>
                 <Button
                   variant="outline"
                   size="icon"
                   data-testid="copy-taptap-phone"
                   onClick={() => copyToClipboard('+261348185069', 'Numéro TapTap Send')}
-                  className="hover:bg-secondary-100"
+                  className="hover:bg-primary-100 border-primary-200"
                 >
                   <Copy className="w-4 h-4" />
                 </Button>
               </div>
             </div>
 
-            <div className="flex items-center gap-2 text-secondary-600">
+            <div className="flex items-center gap-2 text-primary-600">
               <CheckCircle className="w-5 h-5" />
               <span className="text-sm">Transfert rapide et sécurisé</span>
             </div>
@@ -185,8 +225,8 @@ export const DonateSection = () => {
             className="bg-white rounded-3xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-shadow"
           >
             <div className="flex items-center gap-4 mb-6">
-              <div className="w-14 h-14 bg-primary-100 rounded-2xl flex items-center justify-center">
-                <Building2 className="w-7 h-7 text-primary-600" />
+              <div className="w-14 h-14 bg-secondary-100 rounded-2xl flex items-center justify-center">
+                <Building2 className="w-7 h-7 text-secondary-600" />
               </div>
               <div>
                 <h3 className="font-heading font-bold text-xl md:text-2xl text-neutral-900">
@@ -253,18 +293,18 @@ export const DonateSection = () => {
                 </div>
               </div>
 
-              {/* SWIFT */}
+              {/* Address */}
               <div className="bg-neutral-50 rounded-xl p-4">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-xs text-neutral-500 mb-1">{t('donate.bank.swift')}</p>
-                    <p className="font-medium text-neutral-800">{bankDetails.swift}</p>
+                    <p className="text-xs text-neutral-500 mb-1">Adresse</p>
+                    <p className="font-medium text-neutral-800 text-sm">{bankDetails.address}</p>
                   </div>
                   <Button
                     variant="ghost"
                     size="icon"
-                    data-testid="copy-swift"
-                    onClick={() => copyToClipboard(bankDetails.swift, t('donate.bank.swift'))}
+                    data-testid="copy-address"
+                    onClick={() => copyToClipboard(bankDetails.address, 'Adresse')}
                   >
                     <Copy className="w-4 h-4" />
                   </Button>
@@ -286,7 +326,7 @@ export const DonateSection = () => {
           <Button
             asChild
             data-testid="donate-whatsapp-btn"
-            className="bg-secondary-600 hover:bg-secondary-700 text-white rounded-full px-8 shadow-lg shadow-secondary-600/20 hover:-translate-y-1 active:scale-95 transition-all"
+            className="bg-green-600 hover:bg-green-700 text-white rounded-full px-8 shadow-lg shadow-green-600/20 hover:-translate-y-1 active:scale-95 transition-all"
           >
             <a
               href="https://wa.me/261348185069"
