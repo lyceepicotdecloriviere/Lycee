@@ -62,11 +62,13 @@ export const Header = () => {
             data-testid="logo-link"
             className="flex items-center gap-2 group"
           >
-            <div className="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center shadow-lg shadow-primary-600/20 group-hover:scale-105 transition-transform">
-              <Heart className="w-5 h-5 text-white fill-white" />
-            </div>
-            <span className="font-heading font-bold text-lg md:text-xl text-neutral-900 hidden sm:block">
-              Espoir Madagascar
+            <img 
+              src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ysol8o1t_7E016C46-48AE-40B5-97C9-ADABF846205A.jpeg"
+              alt="Logo Lycée Picot de Clorivière"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover shadow-lg group-hover:scale-105 transition-transform"
+            />
+            <span className="font-heading font-bold text-sm md:text-lg text-neutral-900 hidden sm:block leading-tight">
+              Lycée Picot de Clorivière
             </span>
           </a>
 

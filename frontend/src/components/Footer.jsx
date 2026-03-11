@@ -15,11 +15,13 @@ export const Footer = () => {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary-600 flex items-center justify-center">
-                <Heart className="w-5 h-5 text-white fill-white" />
-              </div>
+              <img 
+                src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ysol8o1t_7E016C46-48AE-40B5-97C9-ADABF846205A.jpeg"
+                alt="Logo Lycée Picot de Clorivière"
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <span className="font-heading font-bold text-xl">
-                Espoir Madagascar
+                Lycée Picot de Clorivière
               </span>
             </div>
             <p className="text-neutral-400 text-sm leading-relaxed">
@@ -97,7 +99,7 @@ export const Footer = () => {
         <div className="border-t border-neutral-800 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-neutral-500 text-sm">
-              © {currentYear} Espoir Madagascar. {t('footer.rights')}
+              © {currentYear} Lycée Picot de Clorivière. {t('footer.rights')}
             </p>
             <p className="font-handwriting text-lg text-neutral-400 italic">
               "{t('hero.title')}"

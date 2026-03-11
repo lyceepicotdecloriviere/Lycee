@@ -117,13 +117,16 @@ export const ContactSection = () => {
           className="mt-12 max-w-2xl mx-auto"
         >
           <div className="bg-gradient-to-r from-primary-600 to-primary-700 rounded-3xl p-8 md:p-10 text-center text-white shadow-2xl shadow-primary-600/30">
-            <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-              <span className="font-heading font-bold text-3xl">SV</span>
-            </div>
+            <img 
+              src="https://customer-assets.emergentagent.com/job_enfants-espoir-mg/artifacts/ysol8o1t_7E016C46-48AE-40B5-97C9-ADABF846205A.jpeg"
+              alt="Logo Lycée Picot de Clorivière"
+              className="w-20 h-20 rounded-full mx-auto mb-6 object-cover border-4 border-white/30"
+            />
             <h3 className="font-heading font-bold text-2xl mb-2">
               Sœur Viviane
             </h3>
-            <p className="text-primary-100 mb-6">Directrice de l'établissement</p>
+            <p className="text-primary-100 mb-2">Directrice de l'établissement</p>
+            <p className="text-primary-200 text-sm mb-6">Nazaretakely Antsongo 110, Antsirabe</p>
             <Button
               asChild
               data-testid="contact-main-whatsapp"

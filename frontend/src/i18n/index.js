@@ -13,17 +13,17 @@ const resources = {
       },
       hero: {
         title: "Je fait grandir Madagascar par la qualité de mes actions",
-        subtitle: "Soutenez l'école de Sœur Viviane et offrez un avenir aux enfants de Madagascar",
+        subtitle: "Soutenez le Lycée Picot de Clorivière et offrez un avenir aux enfants vulnérables d'Antsirabe",
         cta: "Faire un don",
         learnMore: "En savoir plus"
       },
       about: {
         title: "Notre Mission",
-        subtitle: "Donner un avenir aux enfants de Madagascar",
-        description: "L'école de Sœur Viviane accueille des enfants défavorisés de la maternelle au lycée. Sans cette école, ces enfants seraient dans la rue ou forcés de travailler. Grâce à l'éducation et à la pédagogie, nous leur donnons un rêve et la possibilité de construire leur avenir.",
+        subtitle: "Recevoir les enfants vulnérables et leur assurer un avenir",
+        description: "Le Lycée Picot de Clorivière accueille depuis 2012 des enfants de 3 à 18 ans issus de familles défavorisées du quartier d'Antsongo, à la périphérie d'Antsirabe. Ces familles sont touchées par l'exode rural et vivent dans la pauvreté. Sans cette école, ces enfants seraient dans la rue ou forcés de travailler.",
         sisterTitle: "Sœur Viviane",
         sisterRole: "Directrice de l'établissement",
-        sisterDescription: "Depuis des années, Sœur Viviane se dévoue corps et âme pour offrir une éducation de qualité aux enfants les plus démunis. Son établissement accueille des élèves de la maternelle au lycée, leur donnant espoir et opportunités.",
+        sisterDescription: "Notre mission: recevoir le plus d'enfants et de jeunes vulnérables, leur permettre une vie digne ainsi que l'épanouissement de tout leur être et assurer un avenir pour eux. Grâce à une éducation de qualité et un accompagnement adapté, nous leur donnons espoir et opportunités.",
         quote: "L'endroit où ils sont aujourd'hui ne définira pas qui ils seront demain."
       },
       stats: {
@@ -39,7 +39,7 @@ const resources = {
       donate: {
         title: "Comment Nous Aider",
         subtitle: "Votre générosité change des vies",
-        description: "Chaque don, petit ou grand, contribue à offrir un avenir meilleur aux enfants. Voici les moyens de nous soutenir :",
+        description: "Chaque don, petit ou grand, contribue à offrir un avenir meilleur aux enfants.",
         taptap: {
           title: "TapTap Send",
           description: "Le moyen le plus simple pour la diaspora",
@@ -54,7 +54,15 @@ const resources = {
           swift: "Code SWIFT"
         },
         copySuccess: "Copié dans le presse-papier !",
-        contactDonate: "Pour toute question sur les dons, contactez-nous directement"
+        contactDonate: "Pour toute question sur les dons, contactez-nous directement",
+        sponsorship: {
+          title: "Parrainage d'élèves",
+          description: "Parrainez un élève pour assurer sa scolarité",
+          preschool: "Préscolaire: 2€ / enfant",
+          primary: "Primaire: 2€ / enfant",
+          secondary1: "Collège: 3€ / jeune",
+          secondary2: "Lycée: 5€ / jeune"
+        }
       },
       contact: {
         title: "Contactez-Nous",
@@ -62,12 +70,13 @@ const resources = {
         whatsapp: "Discuter sur WhatsApp",
         facebook: "Suivre sur Facebook",
         phone: "Appeler directement",
-        director: "Sœur Viviane - Directrice"
+        director: "Sœur Viviane - Directrice",
+        location: "Nazaretakely Antsongo 110, Antsirabe"
       },
       footer: {
         rights: "Tous droits réservés",
-        mission: "Faire grandir Madagascar par la qualité de nos actions",
-        support: "Soutenir l'école"
+        mission: "Fahavononana • Asa • Kalitao - Détermination • Action • Qualité",
+        support: "Soutenir le lycée"
       },
       language: {
         select: "Langue",
@@ -90,17 +99,17 @@ const resources = {
       },
       hero: {
         title: "I make Madagascar grow through the quality of my actions",
-        subtitle: "Support Sister Viviane's school and give a future to the children of Madagascar",
+        subtitle: "Support Lycée Picot de Clorivière and give a future to vulnerable children in Antsirabe",
         cta: "Donate Now",
         learnMore: "Learn More"
       },
       about: {
         title: "Our Mission",
-        subtitle: "Giving a future to the children of Madagascar",
-        description: "Sister Viviane's school welcomes underprivileged children from kindergarten to high school. Without this school, these children would be on the streets or forced to work. Through education and pedagogy, we give them a dream and the possibility to build their future.",
+        subtitle: "Welcoming vulnerable children and securing their future",
+        description: "Since 2012, Lycée Picot de Clorivière has been welcoming children aged 3 to 18 from disadvantaged families in the Antsongo neighborhood, on the outskirts of Antsirabe. These families are affected by rural exodus and live in poverty. Without this school, these children would be on the streets or forced to work.",
         sisterTitle: "Sister Viviane",
         sisterRole: "School Director",
-        sisterDescription: "For years, Sister Viviane has devoted herself body and soul to providing quality education to the most disadvantaged children. Her institution welcomes students from kindergarten to high school, giving them hope and opportunities.",
+        sisterDescription: "Our mission: to receive as many vulnerable children and young people as possible, to enable them to live with dignity and to flourish in all their being, and to secure a future for them. Through quality education and adapted support, we give them hope and opportunities.",
         quote: "Where they are today will not define who they will be tomorrow."
       },
       stats: {
@@ -116,7 +125,7 @@ const resources = {
       donate: {
         title: "How to Help Us",
         subtitle: "Your generosity changes lives",
-        description: "Every donation, small or large, helps provide a better future for children. Here are the ways to support us:",
+        description: "Every donation, small or large, helps provide a better future for children.",
         taptap: {
           title: "TapTap Send",
           description: "The easiest way for the diaspora",
@@ -131,7 +140,15 @@ const resources = {
           swift: "SWIFT Code"
         },
         copySuccess: "Copied to clipboard!",
-        contactDonate: "For any questions about donations, contact us directly"
+        contactDonate: "For any questions about donations, contact us directly",
+        sponsorship: {
+          title: "Student Sponsorship",
+          description: "Sponsor a student to ensure their education",
+          preschool: "Preschool: €2 / child",
+          primary: "Primary: €2 / child",
+          secondary1: "Middle School: €3 / youth",
+          secondary2: "High School: €5 / youth"
+        }
       },
       contact: {
         title: "Contact Us",
@@ -139,11 +156,12 @@ const resources = {
         whatsapp: "Chat on WhatsApp",
         facebook: "Follow on Facebook",
         phone: "Call directly",
-        director: "Sister Viviane - Director"
+        director: "Sister Viviane - Director",
+        location: "Nazaretakely Antsongo 110, Antsirabe"
       },
       footer: {
         rights: "All rights reserved",
-        mission: "Growing Madagascar through the quality of our actions",
+        mission: "Fahavononana • Asa • Kalitao - Determination • Action • Quality",
         support: "Support the school"
       },
       language: {
@@ -167,17 +185,17 @@ const resources = {
       },
       hero: {
         title: "Mampitombo an'i Madagasikara aho amin'ny kalitaon'ny asako",
-        subtitle: "Tohano ny sekolin'i Masera Viviane ary omeo ho avy ny ankizy malagasy",
+        subtitle: "Tohano ny Lycée Picot de Clorivière ary omeo ho avy ny ankizy sahirana ao Antsirabe",
         cta: "Hanome",
         learnMore: "Fantaro bebe kokoa"
       },
       about: {
         title: "Ny Tanjonay",
-        subtitle: "Manome ho avy ny ankizy malagasy",
-        description: "Ny sekolin'i Masera Viviane dia mandray ankizy sahirana manomboka amin'ny maternelle ka hatramin'ny lisea. Raha tsy misy ity sekoly ity dia ho any an-dalana na voatery hiasa ireo ankizy ireo. Amin'ny alalan'ny fanabeazana dia manome nofy sy fahafahana hanorina ny ho aviny isika.",
+        subtitle: "Mandray ankizy sahirana ary manome ho avy azy ireo",
+        description: "Hatramin'ny 2012 dia mandray ankizy 3 ka hatramin'ny 18 taona avy amin'ny fianakaviana sahirana ao amin'ny faritra Antsongo, any ivelan'i Antsirabe ny Lycée Picot de Clorivière. Voakasiky ny fifindra-monina ireo fianakaviana ireo ary miaina ao anatin'ny fahantrana.",
         sisterTitle: "Masera Viviane",
         sisterRole: "Tale ny sekoly",
-        sisterDescription: "Nandritra ny taona maro i Masera Viviane dia nanolotra ny tenany manontolo hanomezana fanabeazana tsara ho an'ny ankizy sahirana indrindra.",
+        sisterDescription: "Ny tanjonay: mandray ankizy sy tanora sahirana betsaka araka izay azo atao, manome azy ireo fiainana mendrika sy fahafahana mivelatra, ary manome ho avy azy ireo.",
         quote: "Ny toerana misy azy anio dia tsy hamaritra hoe iza izy rahampitso."
       },
       stats: {
@@ -193,7 +211,7 @@ const resources = {
       donate: {
         title: "Ahoana ny Hanampiana",
         subtitle: "Ny hatsaram-ponao dia manova fiainana",
-        description: "Ny fanomezana rehetra, kely na lehibe, dia manampy hanomezana ho avy tsara kokoa ho an'ny ankizy:",
+        description: "Ny fanomezana rehetra, kely na lehibe, dia manampy hanomezana ho avy tsara kokoa ho an'ny ankizy.",
         taptap: {
           title: "TapTap Send",
           description: "Ny fomba mora indrindra ho an'ny diaspora",
@@ -208,7 +226,15 @@ const resources = {
           swift: "Kaody SWIFT"
         },
         copySuccess: "Nadika tao amin'ny clipboard!",
-        contactDonate: "Raha misy fanontaniana momba ny fanomezana, mifandraisa aminay"
+        contactDonate: "Raha misy fanontaniana momba ny fanomezana, mifandraisa aminay",
+        sponsorship: {
+          title: "Fiantohana mpianatra",
+          description: "Iantoho mpianatra iray mba hiantohana ny fianarany",
+          preschool: "Préscolaire: 2€ / ankizy",
+          primary: "Primaire: 2€ / ankizy",
+          secondary1: "Collège: 3€ / tanora",
+          secondary2: "Lycée: 5€ / tanora"
+        }
       },
       contact: {
         title: "Mifandraisa Aminay",
@@ -216,11 +242,12 @@ const resources = {
         whatsapp: "Resaho amin'ny WhatsApp",
         facebook: "Araho amin'ny Facebook",
         phone: "Antsoy mivantana",
-        director: "Masera Viviane - Tale"
+        director: "Masera Viviane - Tale",
+        location: "Nazaretakely Antsongo 110, Antsirabe"
       },
       footer: {
         rights: "Zo rehetra voatahiry",
-        mission: "Mampitombo an'i Madagasikara amin'ny kalitaon'ny asanay",
+        mission: "Fahavononana • Asa • Kalitao",
         support: "Tohano ny sekoly"
       },
       language: {
@@ -244,17 +271,17 @@ const resources = {
       },
       hero: {
         title: "Ich lasse Madagaskar durch die Qualität meiner Taten wachsen",
-        subtitle: "Unterstützen Sie Schwester Vivianes Schule und geben Sie den Kindern Madagaskars eine Zukunft",
+        subtitle: "Unterstützen Sie das Lycée Picot de Clorivière und geben Sie gefährdeten Kindern in Antsirabe eine Zukunft",
         cta: "Jetzt Spenden",
         learnMore: "Mehr erfahren"
       },
       about: {
         title: "Unsere Mission",
-        subtitle: "Den Kindern Madagaskars eine Zukunft geben",
-        description: "Die Schule von Schwester Viviane nimmt benachteiligte Kinder vom Kindergarten bis zum Gymnasium auf. Ohne diese Schule wären diese Kinder auf der Straße oder zur Arbeit gezwungen.",
+        subtitle: "Gefährdete Kinder aufnehmen und ihre Zukunft sichern",
+        description: "Seit 2012 nimmt das Lycée Picot de Clorivière Kinder im Alter von 3 bis 18 Jahren aus benachteiligten Familien im Viertel Antsongo am Stadtrand von Antsirabe auf.",
         sisterTitle: "Schwester Viviane",
         sisterRole: "Schuldirektorin",
-        sisterDescription: "Seit Jahren widmet sich Schwester Viviane mit Leib und Seele der Bereitstellung einer qualitativ hochwertigen Bildung für die am stärksten benachteiligten Kinder.",
+        sisterDescription: "Unsere Mission: so viele gefährdete Kinder und Jugendliche wie möglich aufzunehmen, ihnen ein würdiges Leben zu ermöglichen und ihre Zukunft zu sichern.",
         quote: "Wo sie heute sind, wird nicht definieren, wer sie morgen sein werden."
       },
       stats: {
@@ -270,7 +297,7 @@ const resources = {
       donate: {
         title: "Wie Sie Helfen Können",
         subtitle: "Ihre Großzügigkeit verändert Leben",
-        description: "Jede Spende, klein oder groß, hilft den Kindern eine bessere Zukunft zu ermöglichen:",
+        description: "Jede Spende, klein oder groß, hilft den Kindern eine bessere Zukunft zu ermöglichen.",
         taptap: {
           title: "TapTap Send",
           description: "Der einfachste Weg für die Diaspora",
@@ -285,7 +312,15 @@ const resources = {
           swift: "SWIFT-Code"
         },
         copySuccess: "In die Zwischenablage kopiert!",
-        contactDonate: "Bei Fragen zu Spenden kontaktieren Sie uns direkt"
+        contactDonate: "Bei Fragen zu Spenden kontaktieren Sie uns direkt",
+        sponsorship: {
+          title: "Schülerpatenschaften",
+          description: "Übernehmen Sie eine Patenschaft für einen Schüler",
+          preschool: "Vorschule: 2€ / Kind",
+          primary: "Grundschule: 2€ / Kind",
+          secondary1: "Mittelschule: 3€ / Jugendlicher",
+          secondary2: "Gymnasium: 5€ / Jugendlicher"
+        }
       },
       contact: {
         title: "Kontaktieren Sie Uns",
@@ -293,11 +328,12 @@ const resources = {
         whatsapp: "Auf WhatsApp chatten",
         facebook: "Auf Facebook folgen",
         phone: "Direkt anrufen",
-        director: "Schwester Viviane - Direktorin"
+        director: "Schwester Viviane - Direktorin",
+        location: "Nazaretakely Antsongo 110, Antsirabe"
       },
       footer: {
         rights: "Alle Rechte vorbehalten",
-        mission: "Madagaskar durch die Qualität unserer Taten wachsen lassen",
+        mission: "Fahavononana • Asa • Kalitao - Entschlossenheit • Aktion • Qualität",
         support: "Die Schule unterstützen"
       },
       language: {
@@ -321,17 +357,17 @@ const resources = {
       },
       hero: {
         title: "Hago crecer a Madagascar con la calidad de mis acciones",
-        subtitle: "Apoya la escuela de la Hermana Viviane y dale un futuro a los niños de Madagascar",
+        subtitle: "Apoya al Lycée Picot de Clorivière y dale un futuro a los niños vulnerables de Antsirabe",
         cta: "Donar Ahora",
         learnMore: "Saber más"
       },
       about: {
         title: "Nuestra Misión",
-        subtitle: "Dar un futuro a los niños de Madagascar",
-        description: "La escuela de la Hermana Viviane acoge a niños desfavorecidos desde el jardín de infantes hasta el bachillerato. Sin esta escuela, estos niños estarían en las calles o forzados a trabajar.",
+        subtitle: "Acoger a niños vulnerables y asegurar su futuro",
+        description: "Desde 2012, el Lycée Picot de Clorivière acoge a niños de 3 a 18 años de familias desfavorecidas del barrio de Antsongo, en las afueras de Antsirabe.",
         sisterTitle: "Hermana Viviane",
         sisterRole: "Directora de la escuela",
-        sisterDescription: "Durante años, la Hermana Viviane se ha dedicado en cuerpo y alma a proporcionar una educación de calidad a los niños más desfavorecidos.",
+        sisterDescription: "Nuestra misión: recibir a tantos niños y jóvenes vulnerables como sea posible, permitirles una vida digna y asegurar un futuro para ellos.",
         quote: "Donde están hoy no definirá quiénes serán mañana."
       },
       stats: {
@@ -347,7 +383,7 @@ const resources = {
       donate: {
         title: "Cómo Ayudarnos",
         subtitle: "Tu generosidad cambia vidas",
-        description: "Cada donación, pequeña o grande, ayuda a proporcionar un mejor futuro a los niños:",
+        description: "Cada donación, pequeña o grande, ayuda a proporcionar un mejor futuro a los niños.",
         taptap: {
           title: "TapTap Send",
           description: "La forma más fácil para la diáspora",
@@ -362,7 +398,15 @@ const resources = {
           swift: "Código SWIFT"
         },
         copySuccess: "¡Copiado al portapapeles!",
-        contactDonate: "Para cualquier pregunta sobre donaciones, contáctanos directamente"
+        contactDonate: "Para cualquier pregunta sobre donaciones, contáctanos directamente",
+        sponsorship: {
+          title: "Apadrinamiento de estudiantes",
+          description: "Apadrina a un estudiante para asegurar su educación",
+          preschool: "Preescolar: 2€ / niño",
+          primary: "Primaria: 2€ / niño",
+          secondary1: "Secundaria: 3€ / joven",
+          secondary2: "Bachillerato: 5€ / joven"
+        }
       },
       contact: {
         title: "Contáctanos",
@@ -370,11 +414,12 @@ const resources = {
         whatsapp: "Chatear en WhatsApp",
         facebook: "Seguir en Facebook",
         phone: "Llamar directamente",
-        director: "Hermana Viviane - Directora"
+        director: "Hermana Viviane - Directora",
+        location: "Nazaretakely Antsongo 110, Antsirabe"
       },
       footer: {
         rights: "Todos los derechos reservados",
-        mission: "Hacer crecer a Madagascar con la calidad de nuestras acciones",
+        mission: "Fahavononana • Asa • Kalitao - Determinación • Acción • Calidad",
         support: "Apoyar la escuela"
       },
       language: {

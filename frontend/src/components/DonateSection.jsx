@@ -1,6 +1,6 @@
 import { useTranslation } from 'react-i18next';
 import { motion } from 'framer-motion';
-import { Copy, Heart, Building2, Smartphone, CheckCircle } from 'lucide-react';
+import { Copy, Heart, Building2, Smartphone, CheckCircle, Users, GraduationCap } from 'lucide-react';
 import { Button } from './ui/button';
 import { toast } from 'sonner';
 
@@ -9,15 +9,9 @@ export const DonateSection = () => {
 
   const copyToClipboard = async (text, label) => {
     try {
-      await navigator.clipboard.writeText(text);
-      toast.success(t('donate.copySuccess'), {
-        description: label,
-        duration: 2000,
-      });
-    } catch (error) {
-      // Fallback for when clipboard API is not available or permission denied
-      try {
-        // Create a temporary input element for fallback copying
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        await navigator.clipboard.writeText(text);
+      } else {
         const textArea = document.createElement('textarea');
         textArea.value = text;
         textArea.style.position = 'fixed';
@@ -28,26 +22,30 @@ export const DonateSection = () => {
         textArea.select();
         document.execCommand('copy');
         document.body.removeChild(textArea);
-        
-        toast.success(t('donate.copySuccess'), {
-          description: label,
-          duration: 2000,
-        });
-      } catch (fallbackError) {
-        toast.error('Impossible de copier automatiquement. Veuillez sélectionner et copier manuellement.', {
-          description: text,
-          duration: 4000,
-        });
       }
+      toast.success(t('donate.copySuccess'), {
+        description: label,
+        duration: 2000,
+      });
+    } catch (err) {
+      console.error('Copy failed:', err);
+      toast.error('Erreur lors de la copie');
     }
   };
 
   const bankDetails = {
-    accountName: "École Sœur Viviane Madagascar",
+    accountName: "Lycée Picot de Clorivière",
     bankName: "BNI Madagascar",
     iban: "MG46 0000 5000 0123 4567 8901 234",
     swift: "BNIMGMGX"
   };
+
+  const sponsorshipLevels = [
+    { level: t('donate.sponsorship.preschool'), students: '216', price: '2€' },
+    { level: t('donate.sponsorship.primary'), students: '537', price: '2€' },
+    { level: t('donate.sponsorship.secondary1'), students: '368', price: '3€' },
+    { level: t('donate.sponsorship.secondary2'), students: '197', price: '5€' },
+  ];
 
   return (
     <section
@@ -76,6 +74,47 @@ export const DonateSection = () => {
           <p className="text-neutral-600 text-base md:text-lg">
             {t('donate.subtitle')}
           </p>
+        </motion.div>
+
+        {/* Sponsorship Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-12"
+        >
+          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-xl max-w-4xl mx-auto">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="w-14 h-14 bg-accent/20 rounded-2xl flex items-center justify-center">
+                <GraduationCap className="w-7 h-7 text-accent-foreground" />
+              </div>
+              <div>
+                <h3 className="font-heading font-bold text-xl md:text-2xl text-neutral-900">
+                  {t('donate.sponsorship.title')}
+                </h3>
+                <p className="text-sm text-neutral-600">
+                  {t('donate.sponsorship.description')}
+                </p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {sponsorshipLevels.map((item, index) => (
+                <div
+                  key={index}
+                  className="bg-background-alt rounded-xl p-4 text-center hover:shadow-md transition-shadow"
+                >
+                  <p className="text-2xl font-bold text-primary-600 mb-1">{item.price}</p>
+                  <p className="text-sm text-neutral-600 mb-2">{item.level.split(':')[0]}</p>
+                  <div className="flex items-center justify-center gap-1 text-xs text-neutral-500">
+                    <Users className="w-3 h-3" />
+                    <span>{item.students} élèves</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </motion.div>
 
         {/* Donation Options Grid */}

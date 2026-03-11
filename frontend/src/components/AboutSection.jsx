@@ -13,9 +13,9 @@ export const AboutSection = () => {
   const { t } = useTranslation();
 
   const stats = [
-    { icon: Users, value: '500+', label: t('stats.students') },
+    { icon: Users, value: '1295', label: t('stats.students') },
     { icon: GraduationCap, value: '4', label: t('stats.levels') },
-    { icon: Heart, value: '15+', label: t('stats.years') },
+    { icon: Heart, value: '14', label: t('stats.years') },
     { icon: BookOpen, value: '∞', label: t('stats.dreams') },
   ];
 
