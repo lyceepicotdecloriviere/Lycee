@@ -1,0 +1,164 @@
+{
+  "project_identity": {
+    "name": "Sister Viviane's School - Hope for Madagascar",
+    "mission_statement": "Je fait grandir Madagascar par la qualité de mes actions",
+    "persona": "Warm, Authentic, Hopeful, Transparent",
+    "design_archetype": "Organic & Earthy (Archetype 1) with Vibrant Play (Archetype 6) elements",
+    "theme_strategy": "Light Theme (Warm Sand Base)",
+    "primary_language": "fr",
+    "contact": {
+        "whatsapp": "+261 34 81 850 69",
+        "facebook_label": "Suivez-nous sur Facebook"
+    }
+  },
+  "typography": {
+    "font_strategy": "The 'Soft Authority' Pair",
+    "headings": {
+      "font_family": "Fraunces, serif",
+      "weights": ["600", "700"],
+      "usage": "Main headlines, section titles. Use 'Soft' axis if available or standard bold.",
+      "styles": "tracking-tight leading-none text-primary-900"
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500", "700"],
+      "usage": "Paragraphs, UI elements, buttons.",
+      "styles": "leading-relaxed tracking-wide text-primary-800"
+    },
+    "accents": {
+      "font_family": "Caveat, cursive",
+      "usage": "Handwritten notes, decorative quotes, 'Sister's signature'.",
+      "styles": "text-accent-600 italic"
+    },
+    "installation_command": "yarn add @fontsource/fraunces @fontsource/manrope @fontsource/caveat"
+  },
+  "colors": {
+    "palette": {
+      "background": {
+        "default": "#FDFBF7",
+        "alt": "#F5EFE6",
+        "paper": "#FFFFFF"
+      },
+      "primary": {
+        "name": "Madagascar Earth (Red/Brick)",
+        "50": "#FDF3F2",
+        "100": "#FBE5E4",
+        "200": "#F6C5C2",
+        "300": "#EF9894",
+        "400": "#E6635D",
+        "500": "#D83A33",
+        "600": "#C0261F",
+        "700": "#A01D18",
+        "800": "#851B17",
+        "900": "#6F1B18",
+        "DEFAULT": "#D83A33"
+      },
+      "secondary": {
+        "name": "Malagasy Forest (Green)",
+        "50": "#F1F9F5",
+        "100": "#DFF2E8",
+        "200": "#C2E4D4",
+        "300": "#98CEB7",
+        "400": "#68B095",
+        "500": "#469278",
+        "600": "#347660",
+        "700": "#2B5E4D",
+        "800": "#264C40",
+        "900": "#203F36",
+        "DEFAULT": "#2B5E4D"
+      },
+      "accent": {
+        "name": "Hope Sun (Yellow/Orange)",
+        "DEFAULT": "#FFB703",
+        "foreground": "#3F2E00"
+      },
+      "neutral": {
+        "900": "#282626",
+        "800": "#4A4646",
+        "500": "#78716C",
+        "200": "#E7E5E4",
+        "100": "#F5F5F4"
+      }
+    },
+    "usage_rules": {
+      "text": "Never pure black. Use neutral-900 (#282626) for headings, neutral-800 for body.",
+      "cta_primary": "bg-primary-600 hover:bg-primary-700 text-white shadow-lg shadow-primary-600/20",
+      "cta_secondary": "bg-white border-2 border-primary-200 text-primary-700 hover:bg-primary-50",
+      "section_bg": "Alternating between background.default (#FDFBF7) and background.alt (#F5EFE6)."
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "section_padding": "py-24 md:py-32",
+    "grid_strategy": "The 'Bento' Grid Protocol - Mode A (Tetris) for Gallery and Mission.",
+    "border_radius": "rounded-2xl md:rounded-3xl",
+    "shadows": {
+        "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+        "floating": "shadow-[0_20px_50px_rgb(0,0,0,0.1)]"
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Use subtle noise or paper grain overlay on the background (opacity 0.03) to create a 'tactile' feel.",
+    "decorations": "Use SVG shapes (organic blobs) in secondary-100 or primary-100 behind images.",
+    "dividers": "Torn paper edges or gentle wave SVGs between sections.",
+    "glassmorphism": "Use 'Crystal Glass' for the sticky header: bg-white/80 backdrop-blur-xl border-b border-white/20."
+  },
+  "media_assets": {
+    "hero_image": {
+        "url": "https://images.unsplash.com/photo-1518887802087-968ef5f0dc60?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Smiling Malagasy boy looking hopeful",
+        "position": "object-center"
+    },
+    "about_image": {
+        "url": "https://images.unsplash.com/photo-1742925074272-c7cd871beeca?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "alt": "Sister Viviane with students",
+        "note": "Use this as the 'About Sister Viviane' anchor image"
+    },
+    "gallery_images": [
+        "https://images.unsplash.com/photo-1585335947262-a704b581009c?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1585335947094-79dcc6a5e4e0?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1558694440-03ade9215d7b?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.unsplash.com/photo-1659944984855-776187144baf?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "https://images.pexels.com/photos/32265190/pexels-photo-32265190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ],
+    "icons": "lucide-react (Heart, BookOpen, GraduationCap, Coins, Phone, Facebook, Globe)"
+  },
+  "components_strategy": {
+    "Header": {
+      "type": "Sticky Glass",
+      "elements": ["Logo (Text: Hope for Madagascar)", "NavLinks", "Donate Button (Pill shape)", "LangSelector"],
+      "styling": "backdrop-blur-md bg-white/70 sticky top-0 z-50 border-b border-stone-100"
+    },
+    "Hero": {
+      "type": "Immersive Card",
+      "layout": "Background image with a floating 'frosted glass' card containing the main message.",
+      "content": "Headline: 'Je fait grandir Madagascar par la qualité de mes actions'. Subhead: 'Soutenez l'école de Sœur Viviane.' CTA: 'Faire un don'."
+    },
+    "DonationSection": {
+      "type": "Trust Panel",
+      "style": "High contrast. White card on Primary-50 background.",
+      "elements": ["TapTap Send Logo (text)", "Bank Details Grid", "WhatsApp Contact for Proof"],
+      "highlight": "Make the 'TapTap Send' option prominent as it is preferred for diaspora."
+    },
+    "ContactBar": {
+        "type": "Floating Action",
+        "style": "Fixed bottom-right WhatsApp button (Green) with 'Chat with Sister' tooltip."
+    }
+  },
+  "instructions_to_main_agent": [
+    "Install dependencies: yarn add framer-motion lucide-react clsx tailwind-merge @fontsource/fraunces @fontsource/manrope @fontsource/caveat",
+    "Setup Tailwind Colors: Extend theme with the 'Madagascar Earth' and 'Malagasy Forest' palettes provided.",
+    "Implement Smooth Scroll: Add 'scroll-smooth' to html tag.",
+    "Font Loading: Import fonts in main entry file.",
+    "Texture: Add a global background texture in index.css using a pseudo-element on body.",
+    "Accessibility: Ensure text contrast ratios (Red on White needs careful weight selection).",
+    "Animations: Use framer-motion for 'fade-up' effects on scroll for all sections. No 'transition: all'."
+  ],
+  "universal_guidelines": [
+    "Do NOT use gradients for text.",
+    "Do NOT use standard 'alert' reds. Use the specified Earth Red.",
+    "Buttons must have 'active:scale-95' and 'hover:-translate-y-1' micro-interactions.",
+    "Images must have 'rounded-2xl' and subtle parallax if possible.",
+    "Use 'Sonner' for copy-to-clipboard notifications (Donation details)."
+  ]
+}
