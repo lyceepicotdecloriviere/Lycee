@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { HeroSection } from "./components/HeroSection";
 import { AboutSection } from "./components/AboutSection";
 import { GallerySection } from "./components/GallerySection";
+import { ClothesSection } from "./components/ClothesSection";
 import { DonateSection } from "./components/DonateSection";
 import { ContactSection } from "./components/ContactSection";
 import { Footer } from "./components/Footer";
@@ -19,6 +20,7 @@ const HomePage = () => {
         <HeroSection />
         <AboutSection />
         <GallerySection />
+        <ClothesSection />
         <DonateSection />
         <ContactSection />
       </main>
@@ -28,9 +30,9 @@ const HomePage = () => {
         position="bottom-center"
         toastOptions={{
           style: {
-            background: '#FDFBF7',
-            border: '1px solid #E7E5E4',
-            color: '#282626',
+            background: '#F8FCFF',
+            border: '1px solid #D4E2ED',
+            color: '#1A2B3D',
           },
         }}
       />
