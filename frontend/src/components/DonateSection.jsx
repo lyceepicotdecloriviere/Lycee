@@ -47,7 +47,7 @@ export const DonateSection = () => {
     { level: t('donate.sponsorship.secondary2'), students: '197', price: '5€' },
   ];
 
-  const bookingUrl = "https://www.booking.com/hotel/mg/hostels-picot-de-cloriviere.fr.html?aid=356984&label=gog235jc-10CAsokQFCG2hvc3RlbHMtcGljb3QtZGUtY2xvcml2aWVyZUgNWANokQGIAQKYATO4AQfIAQ3YAQPoAQH4AQGIAgGoAgG4AozgxM0GwAIB0gIkZjAxNjE5NDMtM2QwNC00ZTA3LThjYTktYzMzYmUxODBkZDQ52AIB4AIB";
+  const bookingUrl = "https://www.booking.com/Share-APAkqfd";
 
   return (
     <section
